@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+	
+    <head>
+		
+        <title>Mathematics Game</title>
+        
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stijl.css">
+        
+        <script src="java/jquery-ui.js"></script>
+        <script src="java/jquery-1.12.1.min.js"></script>
+        <script src="java/functies.js" type="text/javascript"></script>
+    
+    </head>
+    
+<!-- ****************************** START PAGINA ******************************** -->
+    <body>
+        
+    <button id="soundlogo"></button>
+
+    <div id="startpagina">
+
+        <audio id="Audio" loop><source src="Sound/Startsound.mp3"></audio>
+        <button id="btnplay">PLAY</button>
+        
+    
+    </div>
+<!--************************** Level1 **************************************************************** -->
+    
+    <div id="levels" >   
+        <button id="level1">Level1</button>
+        <button id="level2">Level2</button>
+        <button id="level3">Level3</button>
+    </div>
+               
+<!-- ********************************** SPELPAGINA ******************************-->
+    
+    
+    <div id="spel">
+        
+        <audio id="correctaudio"><source src="Sound/Correct.mp3"></audio>
+        <audio id="fautaudio"><source src="Sound/False%20question%20incorrect%20answer%20sound%20effect.mp3"></audio>
+        
+        <img src="img/correct.png" id="correct" alt="correct">
+        <img src="img/error.png" id="error" alt="fout">
+        
+        
+    <!-- ************** BOX 1 ************* -->
+        <div class="subbox">
+            <div class = "box">
+                
+                <!--<p id="teller"></p> -->
+    
+                
+        <!-- DEEL 1 -->
+                <div class="boxplus">
+                    <p id="ber"></p>
+                    <input name="externR"   id="externR"    type="number" value="" required>
+                </div>
+        
+                <button id="button">Ok</button>
+
+    <!-- ************** BOX 2 ************* -->
+                <p id="feedback"></p>
+    
+            </div>  
+
+
+        <p id="toon"></p>
+        
+        </div>
+    </div>
+        
+    <div id="resultaatPagina">
+    
+        <p id="ScoreOp10"></p>
+        <p id="AntwoordResultaat"></p>
+        <button id="herstart">TRY AGAIN</button>
+        <button id="LevelMenuPagina">TERUG</button>
+        
+        
+    </div>
+      
+	</body>
+    
+</html>
